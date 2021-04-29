@@ -32,7 +32,7 @@ RUN yum install java wget -y; \
     curl -L -o ${NEXUS3_HOME}/donwload/${NEXUS3_VERSION}-unix.tar.gz  https://download.sonatype.com/nexus/3/${NEXUS3_VERSION}-unix.tar.gz; \
     gunzip  ${NEXUS3_HOME}/donwload/${NEXUS3_VERSION}-unix.tar.gz; \
     tar xvf ${NEXUS3_HOME}/donwload/${NEXUS3_VERSION}-unix.tar --directory  ${NEXUS3_HOME}; \
-    rm -rf ${NEXUS3_HOME}/donwload \
+    rm -rf ${NEXUS3_HOME}/donwload; \
     yum clean all -y
 
 # Actualizamos las opciones.
